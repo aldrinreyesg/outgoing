@@ -1,0 +1,8 @@
+#Git Files
+.git
+
+#Node modules
+node_modules/*
+
+#PhpStorm Files
+.idea
