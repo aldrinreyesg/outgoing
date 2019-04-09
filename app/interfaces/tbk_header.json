@@ -1,0 +1,62 @@
+[
+ {
+   "Id": 1,
+   "Nombre": "Código de Transacción",
+   "Formato": "PIC 9(02)",
+   "Descripción": "90"
+ },
+ {
+   "Id": 2,
+   "Nombre": "Filler",
+   "Formato": "PIC X(02)",
+   "Descripción": "Blancos"
+ },
+ {
+   "Id": 3,
+   "Nombre": "BIN del Procesador",
+   "Formato": "PIC X(06)",
+   "Descripción": "Blancos"
+ },
+ {
+   "Id": 4,
+   "Nombre": "Fecha de proceso",
+   "Formato": "PIC 9(5)",
+   "Descripción": "yyddd"
+ },
+ {
+   "Id": 5,
+   "Nombre": "Filler",
+   "Formato": "PIC X(16)",
+   "Descripción": "Blancos"
+ },
+ {
+   "Id": 6,
+   "Nombre": "Opción de proceso",
+   "Formato": "PIC X(04)",
+   "Descripción": "Blanco = Producción"
+ },
+ {
+   "Id": 7,
+   "Nombre": "Filler",
+   "Formato": "PIC X(29)",
+   "Descripción": "Blancos"
+ },
+ {
+   "Id": 8,
+   "Nombre": "Código Seguridad",
+   "Formato": "PIC X(14)",
+   "Descripción": "Blancos"
+ },
+ {
+   "Id": 9,
+   "Nombre": "Filler",
+   "Formato": "PIC X(03)",
+   "Descripción": "Ceros"
+ },
+ {
+   "Id": 10,
+   "Nombre": "Filler",
+   "Formato": "PIC X(89)",
+   "Descripción": "Blancos"
+ }
+]

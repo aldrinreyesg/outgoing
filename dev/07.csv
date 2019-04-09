@@ -1,0 +1,27 @@
+Id;Nombre;Formato;Descripción
+1;TIPO TRANSACCIÓN;PIC 9(02);05: Compra, 25: Dev Compra, 06: Crédito, 26: Dev Crédito 
+2;FILLER;PIC X(02);Blancos 
+3;TRANS-CODE;PIC 9(02);07 (Fijo: registro adicional) 
+4;TRANS-TYPE;PIC X(02);Tipo de la Transacción (Valores refiérase a manual de visa) 
+5;CARD-SEQ-NBR;PIC 9(03);Secuencia de la transacción 
+6;TERM-TRN-DATE;PIC 9(06);Fecha de la Transacción   
+7;TERM-CAP-PROF;PIC X(06);Terminal Capability 
+8;TERM-COUN-CODE;PIC 9(03);Código de País del terminal  
+9;TERM-SER-NBR;PIC X(08);Blancos 
+10;UNPRED-NUMBER;PIC X(08);Unpredictable number 
+11;APP-TRN-COUNT;PIC X(04);Contador de la Transacción 
+12;APP-INTER-PROF;PIC X(04);Perfil de intercambio  
+13;CRYPT;PIC X(16);Criptograma 
+14;ISS-APP-DATA-B2;PIC X(02);Datos del uso del Emisor , Byte 2 
+15;ISS-APP-DATA-B3;PIC X(02);Datos del uso del Emisor , Byte 3 
+16;TERM-VER-RSULT;PIC X(10);Resultado de verificación de Resultados 
+17;ISS-APP-DATA-B4;PIC X(08);Datos del uso del Emisor , Byte 4 
+18;CRYPT-AMT;PIC 9(12);Monto del criptograma 
+19;ISS-APP-DATA-B8;PIC X(02);Datos del uso del Emisor , Byte 8 
+20;ISS-APP-DATA-B9;PIC X(16);Datos del uso del Emisor , Byte 9 
+21;ISS-APP-DATA-B1;PIC X(02);Datos del uso del Emisor , Byte 1 
+22;ISS-APP-DATA-B17;PIC X(02);Datos del uso del Emisor , Byte17 
+23;ISS-APP-DATA-B18;PIC X(30);Datos del uso del Emisor , Byte18 
+24;FORM-FACT-IND;PIC X(08);Blancos 
+25;ISS-RSULT;PIC X(10);Dato del Emisor 
+ ;;;

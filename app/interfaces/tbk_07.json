@@ -1,0 +1,152 @@
+[
+ {
+  "Id": 1,
+  "Nombre":"TIPO TRANSACCIÓN",
+  "Formato":"PIC 9(02)",
+  "Descripción":"05: Compra, 25: Dev Compra, 06: Crédito, 26: Dev Crédito"
+ },
+ {
+  "Id": 2,
+  "Nombre":"FILLER",
+  "Formato":"PIC X(02)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 3,
+  "Nombre":"TRANS-CODE",
+  "Formato":"PIC 9(02)",
+  "Descripción":"07 (Fijo: registro adicional)"
+ },
+ {
+  "Id": 4,
+  "Nombre":"TRANS-TYPE",
+  "Formato":"PIC X(02)",
+  "Descripción":"Tipo de la Transacción (Valores refiérase a manual de visa)"
+ },
+ {
+  "Id": 5,
+  "Nombre":"CARD-SEQ-NBR",
+  "Formato":"PIC 9(03)",
+  "Descripción":"Secuencia de la transacción"
+ },
+ {
+  "Id": 6,
+  "Nombre":"TERM-TRN-DATE",
+  "Formato":"PIC 9(06)",
+  "Descripción":"Fecha de la Transacción  "
+ },
+ {
+  "Id": 7,
+  "Nombre":"TERM-CAP-PROF",
+  "Formato":"PIC X(06)",
+  "Descripción":"Terminal Capability"
+ },
+ {
+  "Id": 8,
+  "Nombre":"TERM-COUN-CODE",
+  "Formato":"PIC 9(03)",
+  "Descripción":"Código de País del terminal "
+ },
+ {
+  "Id": 9,
+  "Nombre":"TERM-SER-NBR",
+  "Formato":"PIC X(08)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 10,
+  "Nombre":"UNPRED-NUMBER",
+  "Formato":"PIC X(08)",
+  "Descripción":"Unpredictable number"
+ },
+ {
+  "Id": 11,
+  "Nombre":"APP-TRN-COUNT",
+  "Formato":"PIC X(04)",
+  "Descripción":"Contador de la Transacción"
+ },
+ {
+  "Id": 12,
+  "Nombre":"APP-INTER-PROF",
+  "Formato":"PIC X(04)",
+  "Descripción":"Perfil de intercambio "
+ },
+ {
+  "Id": 13,
+  "Nombre":"CRYPT",
+  "Formato":"PIC X(16)",
+  "Descripción":"Criptograma"
+ },
+ {
+  "Id": 14,
+  "Nombre":"ISS-APP-DATA-B2",
+  "Formato":"PIC X(02)",
+  "Descripción":"Datos del uso del Emisor , Byte 2"
+ },
+ {
+  "Id": 15,
+  "Nombre":"ISS-APP-DATA-B3",
+  "Formato":"PIC X(02)",
+  "Descripción":"Datos del uso del Emisor , Byte 3"
+ },
+ {
+  "Id": 16,
+  "Nombre":"TERM-VER-RSULT",
+  "Formato":"PIC X(10)",
+  "Descripción":"Resultado de verificación de Resultados"
+ },
+ {
+  "Id": 17,
+  "Nombre":"ISS-APP-DATA-B4",
+  "Formato":"PIC X(08)",
+  "Descripción":"Datos del uso del Emisor , Byte 4"
+ },
+ {
+  "Id": 18,
+  "Nombre":"CRYPT-AMT",
+  "Formato":"PIC 9(12)",
+  "Descripción":"Monto del criptograma"
+ },
+ {
+  "Id": 19,
+  "Nombre":"ISS-APP-DATA-B8",
+  "Formato":"PIC X(02)",
+  "Descripción":"Datos del uso del Emisor , Byte 8"
+ },
+ {
+  "Id": 20,
+  "Nombre":"ISS-APP-DATA-B9",
+  "Formato":"PIC X(16)",
+  "Descripción":"Datos del uso del Emisor , Byte 9"
+ },
+ {
+  "Id": 21,
+  "Nombre":"ISS-APP-DATA-B1",
+  "Formato":"PIC X(02)",
+  "Descripción":"Datos del uso del Emisor , Byte 1"
+ },
+ {
+  "Id": 22,
+  "Nombre":"ISS-APP-DATA-B17",
+  "Formato":"PIC X(02)",
+  "Descripción":"Datos del uso del Emisor , Byte17"
+ },
+ {
+  "Id": 23,
+  "Nombre":"ISS-APP-DATA-B18",
+  "Formato":"PIC X(30)",
+  "Descripción":"Datos del uso del Emisor , Byte18"
+ },
+ {
+  "Id": 24,
+  "Nombre":"FORM-FACT-IND",
+  "Formato":"PIC X(08)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 25,
+  "Nombre":"ISS-RSULT",
+  "Formato":"PIC X(10)",
+  "Descripción":"Dato del Emisor"
+ }
+]

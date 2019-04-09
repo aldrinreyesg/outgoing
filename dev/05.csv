@@ -1,0 +1,31 @@
+Id;Nombre;Formato;Descripción
+1;TIPO TRANSACCIÓN;PIC 9(02);05: Compra, 25: Dev Compra, 06: Crédito, 26: Dev Crédito 
+2;FILLER;PICX(02);Blancos 
+3;TRANS-CODE;PIC9(02);05 (Fijo: registro adicional) 
+4;TRANS-ID;PIC9(15);Identificador de la Transacción (TID) 
+5;AUTH-AMT;PIC9(10)V99;Monto Transacción con Chip 
+6;MONEDA;PIC X(03);Moneda Transacción con Chip 
+7;AUTH-RESP-CD;PIC X(02);Ceros 
+8;VAL-CODE;PIC X(04);Blancos  
+9;EXCL-TRAN-ID-RSN;PIC X(01);Blancos 
+10;CRS-PROCNG-CD;PIC X(01);Blancos 
+11;CHRGBK-COND-CD;PIC X(02);Blancos 
+12;MULT-CLEAR-SEQ-NBR;PIC 9(02);Ceros 
+13;MULT-CLEAR-SEQ-CNT;PIC 9(02);Ceros 
+14;MKT-AUTH-DATA-IND;PIC X(01);Blancos 
+15;TOT-AUTH-AMT;PIC 9(12);Ceros 
+16;INFO-IND;PIC X(01);Blancos 
+17;MER-PHONE;PIC X(14);Blancos 
+18;ADDTL-DATA-IND;PIC X(01);Blancos 
+19;MERCH-VOL-IND;PIC X(02);Blancos 
+20;ELEC-GOOD-IND;PIC X(02);Blancos 
+21;MERCH-VER-VALUE;PIC X(10);Blancos 
+22;INTER-FEE-AMT;PIC 9(15);Blancos 
+23;INTER-FEE-SIGN;PIC X(01);Blancos 
+24;SOURCURR-EXCH-RATE;PIC 9(08);Ceros 
+25;BASECURR-EXCH-RATE;PIC 9(08);Ceros 
+26;OPT-ISA-AMT;PIC 9(12);Ceros 
+27;PROD-ID;PIC X(02);Blancos 
+28;PROG-ID;PIC X(06);Blancos 
+29;Fiiler;PIC X(24);Blancos 
+30;CVV2 Resul Code;PIC X(1);Blancos 

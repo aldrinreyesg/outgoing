@@ -1,0 +1,182 @@
+[
+ {
+  "Id": 1,
+  "Nombre":"TIPO TRANSACCIÓN",
+  "Formato":"PIC 9(02)",
+  "Descripción":"05: Compra, 25: Dev Compra, 06: Crédito, 26: Dev Crédito"
+ },
+ {
+  "Id": 2,
+  "Nombre":"FILLER",
+  "Formato":"PIC X(02)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 3,
+  "Nombre":"TRANS-CODE",
+  "Formato":"PIC 9(02)",
+  "Descripción":"05 (Fijo: registro adicional)"
+ },
+ {
+  "Id": 4,
+  "Nombre":"TRANS-ID",
+  "Formato":"PIC 9(15)",
+  "Descripción":"Identificador de la Transacción (TID)"
+ },
+ {
+  "Id": 5,
+  "Nombre":"AUTH-AMT",
+  "Formato":"PIC 9(10)V99",
+  "Descripción":"Monto Transacción con Chip"
+ },
+ {
+  "Id": 6,
+  "Nombre":"MONEDA",
+  "Formato":"PIC X(03)",
+  "Descripción":"Moneda Transacción con Chip"
+ },
+ {
+  "Id": 7,
+  "Nombre":"AUTH-RESP-CD",
+  "Formato":"PIC X(02)",
+  "Descripción":"Ceros"
+ },
+ {
+  "Id": 8,
+  "Nombre":"VAL-CODE",
+  "Formato":"PIC X(04)",
+  "Descripción":"Blancos "
+ },
+ {
+  "Id": 9,
+  "Nombre":"EXCL-TRAN-ID-RSN",
+  "Formato":"PIC X(01)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 10,
+  "Nombre":"CRS-PROCNG-CD",
+  "Formato":"PIC X(01)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 11,
+  "Nombre":"CHRGBK-COND-CD",
+  "Formato":"PIC X(02)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 12,
+  "Nombre":"MULT-CLEAR-SEQ-NBR",
+  "Formato":"PIC 9(02)",
+  "Descripción":"Ceros"
+ },
+ {
+  "Id": 13,
+  "Nombre":"MULT-CLEAR-SEQ-CNT",
+  "Formato":"PIC 9(02)",
+  "Descripción":"Ceros"
+ },
+ {
+  "Id": 14,
+  "Nombre":"MKT-AUTH-DATA-IND",
+  "Formato":"PIC X(01)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 15,
+  "Nombre":"TOT-AUTH-AMT",
+  "Formato":"PIC 9(12)",
+  "Descripción":"Ceros"
+ },
+ {
+  "Id": 16,
+  "Nombre":"INFO-IND",
+  "Formato":"PIC X(01)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 17,
+  "Nombre":"MER-PHONE",
+  "Formato":"PIC X(14)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 18,
+  "Nombre":"ADDTL-DATA-IND",
+  "Formato":"PIC X(01)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 19,
+  "Nombre":"MERCH-VOL-IND",
+  "Formato":"PIC X(02)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 20,
+  "Nombre":"ELEC-GOOD-IND",
+  "Formato":"PIC X(02)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 21,
+  "Nombre":"MERCH-VER-VALUE",
+  "Formato":"PIC X(10)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 22,
+  "Nombre":"INTER-FEE-AMT",
+  "Formato":"PIC 9(15)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 23,
+  "Nombre":"INTER-FEE-SIGN",
+  "Formato":"PIC X(01)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 24,
+  "Nombre":"SOURCURR-EXCH-RATE",
+  "Formato":"PIC 9(08)",
+  "Descripción":"Ceros"
+ },
+ {
+  "Id": 25,
+  "Nombre":"BASECURR-EXCH-RATE",
+  "Formato":"PIC 9(08)",
+  "Descripción":"Ceros"
+ },
+ {
+  "Id": 26,
+  "Nombre":"OPT-ISA-AMT",
+  "Formato":"PIC 9(12)",
+  "Descripción":"Ceros"
+ },
+ {
+  "Id": 27,
+  "Nombre":"PROD-ID",
+  "Formato":"PIC X(02)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 28,
+  "Nombre":"PROG-ID",
+  "Formato":"PIC X(06)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 29,
+  "Nombre":"Fiiler",
+  "Formato":"PIC X(24)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 30,
+  "Nombre":"CVV2 Resul Code",
+  "Formato":"PIC X(1)",
+  "Descripción":"Blancos"
+ }
+]

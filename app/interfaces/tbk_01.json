@@ -1,0 +1,158 @@
+[
+ {
+  "Id": 1,
+  "Nombre":"TIPO TRANSACCIÓN",
+  "Formato":"PIC 9(02)",
+  "Descripción":"05: Compra, 25: Dev Compra, 06: Crédito, 26: Dev Crédito"
+ },
+ {
+  "Id": 2,
+  "Nombre":"FILLER",
+  "Formato":"PIC X(02)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 3,
+  "Nombre":"TRANS-CODE",
+  "Formato":"PIC 9(02)",
+  "Descripción":"01 (Fijo: registro adicional)"
+ },
+ {
+  "Id": 4,
+  "Nombre":"FILLER",
+  "Formato":"PIC X(12)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 5,
+  "Nombre":"CHARG-REF-N",
+  "Formato":"PIC 9(06)",
+  "Descripción":"No de Referencia del Contracargo del Emisor"
+ },
+ {
+  "Id": 6,
+  "Nombre":"DOCUM-IND",
+  "Formato":"PIC X(01)",
+  "Descripción":"Indicador de Documentación"
+ },
+ {
+  "Id": 7,
+  "Nombre":"MENSAJE",
+  "Formato":"PIC X(50)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 8,
+  "Nombre":"SPE-COND-IND",
+  "Formato":"PIC X(02)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 9,
+  "Nombre":"FILLER",
+  "Formato":"PIC X(05)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 10,
+  "Nombre":"CARD-ACCEPTOR-ID",
+  "Formato":"PIC X(15)",
+  "Descripción":"Valor de código de comercio de Transbank"
+ },
+ {
+  "Id": 11,
+  "Nombre":"TERMINAL-ID",
+  "Formato":"PIC X(08)",
+  "Descripción":"Valor de terminal lógico de Transbank"
+ },
+ {
+  "Id": 12,
+  "Nombre":"VALOR CUOTA",
+  "Formato":"PIC 9(10)V99",
+  "Descripción":"Monto bruto de la cuota asociado al producto Cuotas con Tasa de Interés Única o cuotas simuladas."
+ },
+ {
+  "Id": 13,
+  "Nombre":"Mail/Telephone or Electronic Commerce indicator",
+  "Formato":"PIC X(01)",
+  "Descripción":"Lista de valores refiérase al manual “BASE II Clearing Data Codes” de Visa."
+ },
+ {
+  "Id": 14,
+  "Nombre":"FILLER",
+  "Formato":"PIC X(01)",
+  "Descripción":"Blanco"
+ },
+ {
+  "Id": 15,
+  "Nombre":"COMISIÓN CIC",
+  "Formato":"PIC 9(06)",
+  "Descripción":"Comisión adicional de Cuotas con Tasa de Interés Única"
+ },
+ {
+  "Id": 16,
+  "Nombre":"Filler",
+  "Formato":"PIC X(19)",
+  "Descripción":"Blancos"
+ },
+ {
+  "Id": 17,
+  "Nombre":"FLAG DIFERIDO",
+  "Formato":"PIC X(01)",
+  "Descripción":"0, 1"
+ },
+ {
+  "Id": 18,
+  "Nombre":"FLAG MES DE GRACIA",
+  "Formato":"PIC X(01)",
+  "Descripción":"0, 1"
+ },
+ {
+  "Id": 19,
+  "Nombre":"PERIODOS DE GRACIA",
+  "Formato":"PIC X(01)",
+  "Descripción":"0, 1"
+ },
+ {
+  "Id": 20,
+  "Nombre":"PERIODOS DE DIFERIDO",
+  "Formato":"PIC X(01)",
+  "Descripción":"0, 1, 2, 3"
+ },
+ {
+  "Id": 21,
+  "Nombre":"FLAG-PROMO-EMISORA",
+  "Formato":"PIC X(01)",
+  "Descripción":"0,1"
+ },
+ {
+  "Id": 22,
+  "Nombre":"Origen",
+  "Formato":"PIC X(02)",
+  "Descripción":"Espacios = Para Establecimientos Comerciales no recurrentes 01 = Recurrente origen Emisor 02 = Recurrente origen Establecimiento 03 = Recurrente origen establecimiento vía Call Center 09 = Recaudación uno a uno 23"
+ },
+ {
+  "Id": 24,
+  "Nombre":"TASA EECC",
+  "Formato":"PIC 9(02)V99",
+  "Descripción":"Tasa de Comisión del Establecimiento Comercial aplicado al valor Cuotas con Tasa de Interés Única o cuotas simuladas."
+ },
+ {
+  "Id": 25,
+  "Nombre":"CASHBACK",
+  "Formato":"PIC X(09)",
+  "Descripción":"Ceros"
+ },
+ {
+  "Id": 26,
+  "Nombre":"CHIP-COND",
+  "Formato":"PIC X(01)",
+  "Descripción":"Con chip = 1, Sin chip=Blancos"
+ },
+ {
+  "Id": 27,
+  "Nombre":"Filler",
+  "Formato":"PIC X(01)",
+  "Descripción":"Espacios"
+ }
+]

@@ -1,16 +1,16 @@
 var fs = require('fs');
 
-
-interf.loadIso = function(){
-	var file = './../interfaces/iso.json';
+exports.load = function(fileName){
+	//var jsonData = "";
+	var file = 'app/interfaces/' + fileName + '.json';
 	var obj = JSON.parse(fs.readFileSync(file, 'utf8'));
-	return JSON.parse(obj);
+	// console.log(obj);
+	// try{
+	// 	jsonData = JSON.parse(obj);
+	// }catch(err){
+	// 	console.error(err)
+	// }
+	return obj;
 }
 
-
-interf.load = function(){
-	return interf.loadIso();
-}
-
-
-module.exports = interf;
+module.exports = exports;

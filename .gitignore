@@ -6,3 +6,6 @@ node_modules/*
 
 #PhpStorm Files
 .idea
+
+#inputs files
+inputs/*

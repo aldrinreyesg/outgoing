@@ -1,0 +1,45 @@
+Id;Nombre;Formato;Descripcion
+1;CODIGO TRANSACCION;PIC 9(02);"Tipo de Registro, 05 : Compra;25 : Dev Compra;06 : Credito;26 : Dev Credito"
+2;FILLER;PIC X(02);Blancos 
+3;TRANS-CODE;PIC 9(02);Ceros 
+4;NUMERO TARJETA;PIC 9(16);Numero de tarjeta 
+5;NUMBER-EXT;PIC X(03);Ext. nro. de tarjeta debe ir con ceros. 
+6;FILLER;PIC X(03);Blancos 
+7;NUMERO REFERENCIA        ;;
+7.1;FORM-CODE;PIC 9(01);7 (Fijo)      
+7.2;BIN-FUENTE;PIC 9(06);BIN Transbank 455771      
+7.3;FECHA-CAPT;PIC 9(04);Fecha juliana de proceso (ADDD) es decir, el dia en que se procesa el outgoing.   
+7.4;TIPO VENTA ;PIC 9(01);"Valores Tipo de Venta:
+1 = Venta normal. 2 = Venta de Cargo inmediato, Este c¢digo tiene dos tipos de venta: - Venta en Servicentros - Casino de Juegos Los tipos de venta de Servicentros y Casino de Juegos deben ser asociados al campo de Merchant Category Code norma est ndar Visa. 
+5 = Venta por convenio de Cuota Normal    - Minimo de cuota   =   2    - M ximo de cuota  = 48    Si el Establecimiento Comercial tuviera habilitado en su equipo POS el producto 3 Cuotas Sin Intereses, la cuota minima para Cuota Normal seria 4. 6 = Venta por 3 Cuotas sin Intereses y 2 Cuotas Sin Intereses. 8 = Venta por convenio de Cuotas con Tasa de Interes énica Minimo de cuota =    4 Maximo de cuota = 24 9 = Pago de Impuestos Fiscal. Debe ser asociado al campo Merchant Category Code (norma est ndar Visa) "
+7.5;NUM-CUO;PIC 9(02);En este campo los tipos de venta 2 Cuotas Sin Intereses, 3 Cuotas Sin Intereses, Cuota Normal y Cuota con Tasa de Interes énica deben tener valor m ximo solicitado por el Tarjetahabiente. Los otros tipos de venta deben contener valor ceros.
+7.6;NUM-IDN;PIC 9(08);N° identificador de la transacci¢n (microfilm)
+7.7;CHECK-DIG;PIC 9(01);Digito verificador de n£mero de Referencia 
+8; ACQ-MEMB-ID;PIC 9(08);N£mero de Establecimiento Comercial en Transbank 
+9; FECH-COMP;PIC 9(04);Fecha de compra (MMDD) 
+10;MONTO-DEST;PIC 9(10)V99;Ceros (no aplica en el outgoing) 
+11;MONEDA-DEST;PIC X(03);Blancos (no aplica en el outgoing) 
+12;MONTO-FUENTE;PIC 9(10)V99;Monto de Fuente de la Transacci¢n I.V.A. Incluido 
+13;MONEDA-FUEN;PIC X(03);C¢digo de moneda 152 = Monto Pesos 
+14;NOMB-COMER;PIC X(19);Nombre del Establecimiento Comercial. 
+15;FECHA-D-COMPENSACION;PIC 9(04);MMDD Fecha en que el Emisor deposita en la cuenta de Transbank. Esta fecha debe ser siempre mayor a la fecha de proceso del Adquirente. 
+15;OFIC.;PIC X(02);N£mero de Oficina del Establecimiento Comercial. Valor interno de Transbank 
+16;CIUDAD-COMER;PIC X(12);Ciudad del Establecimiento Comercial 
+17;TDAB;PIC 9(01);Cero 
+18;PAÖS;PIC X(03);C¢digo de pa¡s = CL Est ndar Visa: Representa a Chile seg£n c¢digo ISO asociado 
+19;RUBRO-COMER;PIC 9(04);Est ndar Rubro Visa 
+20;ZIP-CODE-COMER;PIC 9(05);Comisi¢n de la transacciones 
+21;FILLER;PIC X(03); 
+22;COD-MUNIC;PIC X(02);01= Municipalidades 00 = No Municipalidades 
+23;USAG-CODE;PIC 9(01);C¢digo de uso: norma est ndar de Visa 1 = Primera presentaci¢n de la transacci¢n 2 = Segunda presentaci¢n de la representaci¢n 
+24;COD-RAZàN;PIC 9(02);C¢digo de raz¢n norma est ndar de Visa 
+25;SETTLE-FLAG; PIC 9(01);Tipo de intercambio, valor 8 
+26;FILLER;PIC X(01);Blanco 
+27;COD-AUTOR;PIC X(06);C¢digo de autorizaci¢n generado por TBK 
+28;POS-TERMINALCAPABILITY;PIC X(01);Valores refi‚rase a Manual Data Code de Visa 
+29;INT-FEE-INDIC;PIC X(01);2 : Fijo Transacciones Monetarias 
+30;CARDHOLDER-ID-METHOD; PIC X(01);Valores refi‚rase a Manual Data Code de Visa 2: Transacci¢n realizada con PIN 
+31;FILLER; PIC X(01);Blanco 
+32;POS-ENTRY-MODE; PIC X(02);Valores refi‚rase a Manual Data Code de Visa 
+33;FECHA-PROC;PIC 9(04);Fecha juliana de proceso de la transacci¢n Adquirente (ADDD) 
+34;REIMB-ATTR;PIC X(01);Cero. 

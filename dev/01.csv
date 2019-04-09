@@ -1,0 +1,28 @@
+Id;Nombre;Formato;Descripción
+1;TIPO TRANSACCIÓN;PIC 9(02);05: Compra, 25: Dev Compra, 06: Crédito, 26: Dev Crédito 
+2;FILLER;PIC X(02);Blancos 
+3;TRANS-CODE;PIC 9(02);01 (Fijo: registro adicional) 
+4;FILLER;PIC X(12);Blancos 
+5;CHARG-REF-N;PIC 9(06);No de Referencia del Contracargo del Emisor 
+6;DOCUM-IND;PIC X(01);Indicador de Documentación 
+7;MENSAJE;PIC X(50);Blancos 
+8;SPE-COND-IND;PIC X(02);Blancos 
+9;FILLER;PIC X(05);Blancos 
+10;CARD-ACCEPTOR-ID;PIC X(15);Valor de código de comercio de Transbank 
+11;TERMINAL-ID;PIC X(08);Valor de terminal lógico de Transbank 
+12;VALOR CUOTA;PIC 9(10)V99;Monto bruto de la cuota asociado al producto Cuotas con Tasa de Interés Única o cuotas simuladas. 
+13;Mail/Telephone or Electronic Commerce indicator;PIC X(01);Lista de valores refiérase al manual “BASE II Clearing Data Codes” de Visa. 
+14;FILLER; PIC X(01);Blanco 
+15;COMISIÓN CIC;PIC 9(06);Comisión adicional de Cuotas con Tasa de Interés Única 
+16;Filler; PIC X(19);Blancos 
+17;FLAG DIFERIDO;PIC X(01);0, 1 
+18;FLAG MES DE GRACIA;PIC X(01);0, 1 
+19;PERIODOS DE GRACIA;PIC X(01);0, 1 
+20;PERIODOS DE DIFERIDO;PIC X(01);0, 1, 2, 3 
+21;FLAG-PROMO-EMISORA;PIC X(01);0,1
+22;Origen; PIC X(02);Espacios = Para Establecimientos Comerciales no recurrentes 01 = Recurrente origen Emisor 02 = Recurrente origen Establecimiento 03 = Recurrente origen establecimiento vía Call Center 09 = Recaudación uno a uno 23
+24;TASA EECC;PIC 9(02)V99;Tasa de Comisión del Establecimiento Comercial aplicado al valor Cuotas con Tasa de Interés Única o cuotas simuladas. 
+25;CASHBACK;PIC X(09);Ceros 
+26;CHIP-COND;PIC X(01);Con chip = 1, Sin chip=Blancos 
+27;Filler;PIC X(01);Espacios 
+ ;;;

@@ -1,0 +1,254 @@
+[
+ {
+   "Id": 1,
+   "Nombre": "CODIGO TRANSACCION",
+   "Formato": "PIC 9(02)",
+   "Descripcion": "Tipo de Registro, 05 : Compra;25 : Dev Compra;06 : Credito;26 : Dev Credito"
+ },
+ {
+   "Id": 2,
+   "Nombre": "FILLER",
+   "Formato": "PIC X(02)",
+   "Descripcion": "Blancos"
+ },
+ {
+   "Id": 3,
+   "Nombre": "TRANS-CODE",
+   "Formato": "PIC 9(02)",
+   "Descripcion": "Ceros"
+ },
+ {
+   "Id": 4,
+   "Nombre": "NUMERO TARJETA",
+   "Formato": "PIC 9(16)",
+   "Descripcion": "Numero de tarjeta"
+ },
+ {
+   "Id": 5,
+   "Nombre": "NUMBER-EXT",
+   "Formato": "PIC X(03)",
+   "Descripcion": "Ext. nro. de tarjeta debe ir con ceros."
+ },
+ {
+   "Id": 6,
+   "Nombre": "FILLER",
+   "Formato": "PIC X(03)",
+   "Descripcion": "Blancos"
+ },
+ {
+   "Id": 7,
+   "Nombre": "NUMERO REFERENCIA",
+   "Formato": "",
+   "Descripcion": ""
+ },
+ {
+   "Id": 7.1,
+   "Nombre": "FORM-CODE",
+   "Formato": "PIC 9(01)",
+   "Descripcion": "7 (Fijo)"
+ },
+ {
+   "Id": 7.2,
+   "Nombre": "BIN-FUENTE",
+   "Formato": "PIC 9(06)",
+   "Descripcion": "BIN Transbank 455771"
+ },
+ {
+   "Id": 7.3,
+   "Nombre": "FECHA-CAPT",
+   "Formato": "PIC 9(04)",
+   "Descripcion": "Fecha juliana de proceso (ADDD) es decir, el dia en que se procesa el outgoing."
+ },
+ {
+   "Id": 7.4,
+   "Nombre": "TIPO VENTA ",
+   "Formato": "PIC 9(01)",
+   "Descripcion": "Valores Tipo de Venta:\n1 = Venta normal. 2 = Venta de Cargo inmediato, Este código tiene dos tipos de venta: - Venta en Servicentros - Casino de Juegos Los tipos de venta de Servicentros y Casino de Juegos deben ser asociados al campo de Merchant Category Code norma estándar Visa. \n5 = Venta por convenio de Cuota Normal    - Mínimo de cuota   =   2    - Máximo de cuota  = 48    Si el Establecimiento Comercial tuviera habilitado en su equipo POS el producto 3 Cuotas Sin Intereses, la cuota mínima para Cuota Normal seria 4. 6 = Venta por 3 Cuotas sin Intereses y 2 Cuotas Sin Intereses. 8 = Venta por convenio de Cuotas con Tasa de Interes única Mínimo de cuota =    4 Máximo de cuota = 24 9 = Pago de Impuestos Fiscal. Debe ser asociado al campo Merchant Category Code (norma est ndar Visa)"
+ },
+ {
+   "Id": 7.5,
+   "Nombre": "NUM-CUO",
+   "Formato": "PIC 9(02)",
+   "Descripcion": "En este campo los tipos de venta 2 Cuotas Sin Intereses, 3 Cuotas Sin Intereses, Cuota Normal y Cuota con Tasa de Interes única deben tener valor máximo solicitado por el Tarjetahabiente. Los otros tipos de venta deben contener valor ceros."
+ },
+ {
+   "Id": 7.6,
+   "Nombre": "NUM-IDN",
+   "Formato": "PIC 9(08)",
+   "Descripcion": "N° identificador de la transacci¢n (microfilm)"
+ },
+ {
+   "Id": 7.7,
+   "Nombre": "CHECK-DIG",
+   "Formato": "PIC 9(01)",
+   "Descripcion": "Digito verificador de n£mero de Referencia"
+ },
+ {
+   "Id": 8,
+   "Nombre": " ACQ-MEMB-ID",
+   "Formato": "PIC 9(08)",
+   "Descripcion": "Número de Establecimiento Comercial en Transbank"
+ },
+ {
+   "Id": 9,
+   "Nombre": " FECH-COMP",
+   "Formato": "PIC 9(04)",
+   "Descripcion": "Fecha de compra (MMDD)"
+ },
+ {
+   "Id": 10,
+   "Nombre": "MONTO-DEST",
+   "Formato": "PIC 9(10)V99",
+   "Descripcion": "Ceros (no aplica en el outgoing)"
+ },
+ {
+   "Id": 11,
+   "Nombre": "MONEDA-DEST",
+   "Formato": "PIC X(03)",
+   "Descripcion": "Blancos (no aplica en el outgoing)"
+ },
+ {
+   "Id": 12,
+   "Nombre": "MONTO-FUENTE",
+   "Formato": "PIC 9(10)V99",
+   "Descripcion": "Monto de Fuente de la Transacción I.V.A. Incluido"
+ },
+ {
+   "Id": 13,
+   "Nombre": "MONEDA-FUEN",
+   "Formato": "PIC X(03)",
+   "Descripcion": "Código de moneda 152 = Monto Pesos"
+ },
+ {
+   "Id": 14,
+   "Nombre": "NOMB-COMER",
+   "Formato": "PIC X(19)",
+   "Descripcion": "Nombre del Establecimiento Comercial."
+ },
+ {
+   "Id": 15,
+   "Nombre": "FECHA-D-COMPENSACION",
+   "Formato": "PIC 9(04)",
+   "Descripcion": "MMDD Fecha en que el Emisor deposita en la cuenta de Transbank. Esta fecha debe ser siempre mayor a la fecha de proceso del Adquirente."
+ },
+ {
+   "Id": 15,
+   "Nombre": "OFIC.",
+   "Formato": "PIC X(02)",
+   "Descripcion": "Número de Oficina del Establecimiento Comercial. Valor interno de Transbank"
+ },
+ {
+   "Id": 16,
+   "Nombre": "CIUDAD-COMER",
+   "Formato": "PIC X(12)",
+   "Descripcion": "Ciudad del Establecimiento Comercial"
+ },
+ {
+   "Id": 17,
+   "Nombre": "TDAB",
+   "Formato": "PIC 9(01)",
+   "Descripcion": "Cero"
+ },
+ {
+   "Id": 18,
+   "Nombre": "PAIS",
+   "Formato": "PIC X(03)",
+   "Descripcion": "Código de país = CL Estándar Visa: Representa a Chile según código ISO asociado"
+ },
+ {
+   "Id": 19,
+   "Nombre": "RUBRO-COMER",
+   "Formato": "PIC 9(04)",
+   "Descripcion": "Estándar Rubro Visa"
+ },
+ {
+   "Id": 20,
+   "Nombre": "ZIP-CODE-COMER",
+   "Formato": "PIC 9(05)",
+   "Descripcion": "Comisión de la transacciones"
+ },
+ {
+   "Id": 21,
+   "Nombre": "FILLER",
+   "Formato": "PIC X(03)",
+   "Descripcion": ""
+ },
+ {
+   "Id": 22,
+   "Nombre": "COD-MUNIC",
+   "Formato": "PIC X(02)",
+   "Descripcion": "01= Municipalidades 00= No Municipalidades"
+ },
+ {
+   "Id": 23,
+   "Nombre": "USAG-CODE",
+   "Formato": "PIC 9(01)",
+   "Descripcion": "Código de uso: norma estándar de Visa 1 = Primera presentación de la transacción 2 = Segunda presentación de la representación"
+ },
+ {
+   "Id": 24,
+   "Nombre": "COD-RAZON",
+   "Formato": "PIC 9(02)",
+   "Descripcion": "Código de razón norma estándar de Visa"
+ },
+ {
+   "Id": 25,
+   "Nombre": "SETTLE-FLAG",
+   "Formato": "PIC 9(01)",
+   "Descripcion": "Tipo de intercambio, valor 8"
+ },
+ {
+   "Id": 26,
+   "Nombre": "FILLER",
+   "Formato": "PIC X(01)",
+   "Descripcion": "Blanco"
+ },
+ {
+   "Id": 27,
+   "Nombre": "COD-AUTOR",
+   "Formato": "PIC X(06)",
+   "Descripcion": "Código de autorización generado por TBK"
+ },
+ {
+   "Id": 28,
+   "Nombre": "POS-TERMINALCAPABILITY",
+   "Formato": "PIC X(01)",
+   "Descripcion": "Valores refiérase a Manual Data Code de Visa"
+ },
+ {
+   "Id": 29,
+   "Nombre": "INT-FEE-INDIC",
+   "Formato": "PIC X(01)",
+   "Descripcion": "2 : Fijo Transacciones Monetarias"
+ },
+ {
+   "Id": 30,
+   "Nombre": "CARDHOLDER-ID-METHOD",
+   "Formato": "PIC X(01)",
+   "Descripcion": "Valores refiérase a Manual Data Code de Visa 2: Transacción realizada con PIN"
+ },
+ {
+   "Id": 31,
+   "Nombre": "FILLER",
+   "Formato": "PIC X(01)",
+   "Descripcion": "Blanco"
+ },
+ {
+   "Id": 32,
+   "Nombre": "POS-ENTRY-MODE",
+   "Formato": "PIC X(02)",
+   "Descripcion": "Valores refiérase a Manual Data Code de Visa"
+ },
+ {
+   "Id": 33,
+   "Nombre": "FECHA-PROC",
+   "Formato": "PIC 9(04)",
+   "Descripcion": "Fecha juliana de proceso de la transacción Adquirente (ADDD)"
+ },
+ {
+   "Id": 34,
+   "Nombre": "REIMB-ATTR",
+   "Formato": "PIC X(01)",
+   "Descripcion": "Cero."
+ }
+]

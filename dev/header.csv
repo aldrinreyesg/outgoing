@@ -1,0 +1,11 @@
+Id;Nombre;Formato;Descripción
+1;Código de Transacción;PIC (02);90
+2;Filler;PIC X(02);Blancos 
+3;BIN del Procesador;PIC X(06);Blancos 
+4;Fecha de proceso;PIC 9(5);yyddd 
+5;Filler;PIC X(16);Blancos 
+6;Opción de proceso;PIC X(04);Blanco = Producción 
+7;Filler;PIC X(29);Blancos 
+8;Código Seguridad;PIC X(14);Blancos 
+9;Filler;PIC X(03);Ceros 
+10;Filler;PIC X(89);Blancos 
